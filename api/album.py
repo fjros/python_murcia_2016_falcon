@@ -37,7 +37,7 @@ class Albums:
         :param `falcon.Response` resp: HTTP response.
         """
 
-        resp.body = json.dumps(_albums.values())
+        resp.body = json.dumps(list(_albums.values()))
         resp.status = falcon.HTTP_200
 
     def on_post(self, req, resp):

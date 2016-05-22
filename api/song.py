@@ -43,7 +43,7 @@ class Songs:
         if albums:
             songs = [song for song in _songs.values() if song['album'] in albums]
         else:
-            songs = _songs.values()
+            songs = list(_songs.values())
 
         resp.body = json.dumps(songs)
         resp.status = falcon.HTTP_200
