@@ -8,22 +8,22 @@ _songs = {
     'song-1': {
         'id': 'song-1',
         'name': 'Future world',
-        'album': 'uuid-1'
+        'album': 'album-1'
     },
     'song-2': {
         'id': 'song-2',
         'name': 'Lust for life',
-        'album': 'uuid-2'
+        'album': 'album-2'
     },
     'song-3': {
         'id': 'song-3',
         'name': 'Space eater',
-        'album': 'uuid-2'
+        'album': 'album-2'
     },
     'song-4': {
         'id': 'song-4',
         'name': 'Hunting high and low',
-        'album': 'uuid-3'
+        'album': 'album-3'
     }
 }
 
