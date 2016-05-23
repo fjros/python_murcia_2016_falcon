@@ -7,6 +7,12 @@
 
 HOSTNAME = "falcon.meetup.dev"
 IP = "192.168.0.2"
+$script = <<SCRIPT
+sudo apt-get update
+sudo apt-get -y install python3-pip python3-dev
+sudo pip3 install -r /vagrant/requirements.txt
+sudo pip3 install -r /vagrant/requirements-test.txt
+SCRIPT
 
 # Configuration version 2 - do not change
 Vagrant.configure("2") do |config|
@@ -20,5 +26,8 @@ Vagrant.configure("2") do |config|
       vbox.memory = 512
       vbox.cpus = 1
     end
+
+    machine.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
+    machine.vm.provision "shell", inline: $script
   end
 end
