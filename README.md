@@ -2,7 +2,7 @@ A primer on Falcon
 ==================
 
 This repo contains the code and slides of a short talk given at the
-[Python Murcia](http://www.meetup.com/es-ES/Meetup-de-Python-en-Murcia/) meetup on May 2016. The
+[Python Murcia](http://www.meetup.com/es-ES/Meetup-de-Python-en-Murcia/) meetup in May 2016. The
 objective is to introduce REST API development via [Falcon](http://falconframework.org) through
 some simple examples.
 
